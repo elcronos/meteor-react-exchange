@@ -1,0 +1,340 @@
+/* CSS declarations go here */
+body{
+  height:100%; margin:0;padding:0;
+  width: auto;
+  /* Ensures that the transition only runs in one direction */
+  -webkit-transition: background-color 0;
+  transition: background-color 0;
+}
+@-ms-viewport{
+  width: device-width;
+}
+
+.customicon{
+  padding-top: 1.2em;
+  padding-right: 1em;
+  color: rgb(66,117,255)
+}
+.emptystate{
+  color: rgb(160, 186, 255);
+}
+.layer-flag {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.btnColorPrimary{
+  color: white;
+  background-color: rgb(160, 186, 255);
+}
+
+.color-native{
+  color: rgb(251,188,5);
+}
+.color-gold{
+  color: rgb(66,117,255);
+}
+.myphoto{
+  border-radius: 50%;
+}
+.circleform{
+  margin-left: 2em;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em
+}
+.content-layout{
+  padding-top: 0em;
+}
+.list-users{
+  position: fixed;
+  top: 1em;
+}
+/* LOGIN FORM */
+.username {
+  background: url(img/iconUser.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  font-size: 20px;
+}
+
+.password {
+  background: url(img/iconSecret.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  -webkit-text-security: circle;
+  font-size: 20px;
+}
+
+/*  SIGNUP FORM */
+.text-signup{
+  font-size: 20px;
+  color: white;
+}
+.username-signup {
+  width: auto;
+  background: url(img/iconUser.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  font-size: 20px;
+}
+
+.email-signup {
+  width: auto;
+  background: url(img/mail.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  font-size: 20px;
+}
+
+.password-signup {
+  width: auto;
+  background: url(img/iconSecret.svg) no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: left center;
+  -webkit-text-security: circle;
+  font-size: 20px;
+}
+
+/* CUSTOM CSS */
+
+.background-white{
+  background: white;
+}
+.background-blue{
+  background: rgba(46, 102, 255, 0.9)
+}
+.background-gradient{
+  background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(246,41,12,1) 0%, rgba(241,111,92,1) 0%, rgba(4,76,127,1) 0%, rgba(60,148,227,1) 100%);
+}
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+.buttonRounded {
+  border-radius: 25px;
+  border: 2px solid #5B5B58;
+  align-content: center;
+  width: 15em;
+  height: 3em;
+}
+
+.buttonTrans{
+  border: 2px solid #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.buttonSolid{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: left center;
+  font-size: 15px;
+}
+.rounded {
+  border-radius: 25px;
+  border: 2px solid #5B5B58;
+  width: 20em;
+  height: 3em;
+}
+@media (min-width: 360px) and (max-width: 640px) {
+  .btn-responsive {
+    --padding: 4px 9px;
+    width: 70%;
+    margin-bottom: 0.3em;
+    padding-left: 2.5em;
+    line-height: 2;
+  }
+}
+@media (min-width: 640px) and (max-width: 993px) {
+  .btn-responsive {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1em;
+    padding-left: 2.5em;
+    --font-size: 100%;
+    line-height: 2;
+  }
+}
+@media (min-width: 993px) {
+  .btn-responsive {
+    padding: 4px 9px;
+    width: 40%;
+    height: auto;
+    margin-bottom: 1.5em;
+    padding-left: 2.5em;
+    --font-size: 100%;
+    line-height: 2;
+  }
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(fonts/GrandHotel-Regular.otf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+.logo-font{
+  position: relative;
+  --margin-bottom: 1em;
+  font-family: logoFont;
+  font-size: 100px;
+  padding-top: 1em;
+  padding-bottom: 0.7em;
+  color: white;
+}
+
+.roboto-font{
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-family: roboto;
+}
+
+.sk-folding-cube {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+#
+# Spinner
+#
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+/* CUSTOM FORMS */
+.custom-btn-primary{
+  background-color: rgba(46, 102, 255, 0.9)
+}
+.bootstrap-iso .form-group button, .bootstrap-iso form input.form-control, .bootstrap-iso form textarea.form-control, .bootstrap-iso form select.form-control, .bootstrap-iso form .form-group-lg input.form-control, .bootstrap-iso form .form-group-lg textarea.form-control, .bootstrap-iso form .form-group-lg select.form-control, .bootstrap-iso form .form-group-sm input.form-control, .bootstrap-iso form .form-group-sm textarea.form-control, .bootstrap-iso form
+.form-group-sm select.form-control{-webkit-border-radius: 20px;-moz-border-radius: 20px; border-radius: 20px;}.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}.bootstrap-iso form .input-group-addon {color:#1874b0; background-color: #ffffff; border-radius: 20px; padding-left:15px}

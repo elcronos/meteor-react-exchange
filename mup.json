@@ -1,0 +1,18 @@
+{
+  "servers": [{
+    "host": "45.55.159.107",
+    "username": "root",
+    "password": "elcronos"
+  }],
+  "setupMongo": false,
+  "appName": "Langex",
+  "app": "/Users/camilo/Desktop/Meteor/Langex",
+  "env":{
+    "PORT": 80,
+    "ROOT_URL": "http://45.55.159.107",
+    "MONGO_URL": "mongodb://capcarde:elcronos@ds023052.mlab.com:23052/langex",
+    "UPLOAD_DIR": "/opt/Langex/uploads"
+  },
+  "deployCheckWaitTime": 1200,
+  "enableUploadProgressBar": true
+}

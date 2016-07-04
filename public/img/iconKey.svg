@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="56px" viewBox="0 0 57 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Key</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-723.000000, -5600.000000)" stroke-linecap="round" stroke="#000000" stroke-width="2">
+            <g id="Key" sketch:type="MSLayerGroup" transform="translate(724.500000, 5601.000000)">
+                <path d="M54,15 C54,23.284 47.284,30 39,30 C30.716,30 24,23.284 24,15 C24,6.716 30.716,0 39,0 C47.284,0 54,6.716 54,15 L54,15 Z" id="Stroke-7658" sketch:type="MSShapeGroup"></path>
+                <path d="M27,24 L0,51" id="Stroke-7660" sketch:type="MSShapeGroup"></path>
+                <path d="M5,46 L13,54" id="Stroke-7662" sketch:type="MSShapeGroup"></path>
+                <path d="M10,41 L16,47" id="Stroke-7664" sketch:type="MSShapeGroup"></path>
+                <path d="M15,36 L23,44" id="Stroke-7666" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

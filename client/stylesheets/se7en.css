@@ -1,0 +1,221 @@
+/*----------------------------------------------------------------------------------- */
+/*  Widget-Container */
+/*----------------------------------------------------------------------------------- */
+.widget-container {
+  min-height: 320px;
+  background: white;
+  }
+  .widget-container.fluid-height {
+    height: auto;
+    min-height: 0; }
+  .widget-container.small {
+    min-height: 120px;
+    height: 200px; }
+  .widget-container.gallery {
+    min-height: 400px; }
+  .widget-container .heading {
+    background: rgba(255, 255, 255, 0.94);
+    height: 50px;
+    padding: 15px 15px;
+    color: #007aff;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 400;
+    margin: 0; }
+    .widget-container .heading [class^="icon-"], .widget-container .heading [class*="icon-"] {
+      margin-right: 10px;
+      font-size: 14px; }
+      .widget-container .heading [class^="icon-"].pull-right, .widget-container .heading [class*="icon-"].pull-right {
+        margin-right: 0px;
+        margin-left: 15px;
+        opacity: 0.35;
+        font-size: 1.1em; }
+      .widget-container .heading [class^="icon-"]:hover, .widget-container .heading [class*="icon-"]:hover {
+        cursor: pointer;
+        opacity: 1; }
+  .widget-container .tabs {
+    background: whitesmoke;
+    border-bottom: 1px solid #dddddd; }
+  .widget-container .widget-content {
+    width: 100%; }
+  .widget-container.scrollable {
+    position: relative;
+    height: 400px;
+    padding-top: 50px; }
+    .widget-container.scrollable.chat-home {
+      height: 427px; }
+    .widget-container.scrollable .heading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10; }
+    .widget-container.scrollable .shadow {
+      box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1); }
+    .widget-container.scrollable .widget-content {
+      height: 100%;
+      position: relative;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; }
+
+.padded {
+  padding: 15px; }
+
+  /*----------------------------------------------------------------------------------- */
+  /*  Chat widget */
+  /*----------------------------------------------------------------------------------- */
+  .chat {
+    padding-bottom: 52px; }
+    .chat .widget-content {
+      padding-right: 20px;
+      background-color: white; }
+      .chat .widget-content .scrollbar-path-vertical {
+        bottom: 56px !important; }
+      .chat .widget-content ul {
+        list-style: none;
+        padding: 0; }
+        .chat .widget-content ul li {
+          margin-bottom: 14px;
+          padding-left: 40px;
+          padding-right: 80px;
+          position: relative; }
+          .chat .widget-content ul li:last-child {
+            margin-bottom: 0; }
+          .chat .widget-content ul li img {
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            border-radius: 50%; }
+          .chat .widget-content ul li .bubble {
+            padding: 12px 15px;
+            background: #e5e5ea;
+            border-radius: 15px;
+            position: relative; }
+            .chat .widget-content ul li .bubble:after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: -5px;
+              --background: url("img/il.svg") left top no-repeat;
+              width: 13px;
+              height: 13px;
+              display: block; }
+              @media (min--moz-device-pixel-ratio: 1), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+                .chat .widget-content ul li .bubble:after {
+                  background-image: url("../images/chat-left%402x.png");
+                  background-size: 13px 13px; } }
+            .chat .widget-content ul li .bubble .user-name {
+              font-size: 1.1em;
+              margin-bottom: 8px;
+              display: inline-block; }
+            .chat .widget-content ul li .bubble p.message {
+              font-size: 0.95em;
+              margin-bottom: 12px;
+              color: #333333; }
+            .chat .widget-content ul li .bubble .time {
+              font-size: 0.8em;
+              color: #888888;
+              margin-bottom: 0; }
+          .chat .widget-content ul li.current-user {
+            padding-right: 40px;
+            padding-left: 80px; }
+            .chat .widget-content ul li.current-user img {
+              right: 0;
+              left: auto; }
+            .chat .widget-content ul li.current-user .bubble {
+              background: rgb(85,136,238); }
+              .chat .widget-content ul li.current-user .bubble:after {
+                background: url("../images/chat-right.png") left top no-repeat;
+                left: auto;
+                right: -6px; }
+                @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+                  .chat .widget-content ul li.current-user .bubble:after {
+                    background-image: url("../images/chat-right%402x.png");
+                    background-size: 13px 13px; } }
+            .chat .widget-content ul li.current-user p, .chat .widget-content ul li.current-user a {
+              color: white !important; }
+            .chat .widget-content ul li.current-user .time {
+              opacity: 0.75; }
+    .chat .post-message {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5em;
+      padding: 8px 60px 8px 8px;
+      background: #f2f2f2;
+      border-top: 1px solid #cccccc; }
+      .chat .post-message input[type="text"] {
+        width: 100%;
+        height: 100%; }
+      .chat .post-message .submit {
+        position: absolute;
+        top: 1em;
+        right: 1.2em;
+        margin: 0;
+        border: 0;
+        background: transparent;
+        color: #007aff;
+        font-weight: 600;
+        font-size: 20px; }
+
+  .widget-container.chat-page {
+    height: 100%;
+    --padding: 0 0 50px 50px;
+    position: relative;
+    background-color: #f2f2f2; }
+    .widget-container.chat-page .contact-list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 222px;
+      height: 100%;
+      border-right: 1px solid #dddddd;
+      padding-top: 50px; }
+      .widget-container.chat-page .contact-list .heading {
+        background-color: transparent;
+        color: #777777;
+        border-bottom: 1px solid #d6d6d6;
+        font-size: 16px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; }
+        .widget-container.chat-page .contact-list .heading i {
+          margin-top: 4px;
+          font-size: 1em; }
+      .widget-container.chat-page .contact-list ul {
+        list-style: none;
+        padding-left: 15px;
+        margin: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 100%; }
+        .widget-container.chat-page .contact-list ul li {
+          border-bottom: 1px solid #d6d6d6;
+          margin: 0; }
+          .widget-container.chat-page .contact-list ul li a {
+            display: block;
+            position: relative;
+            left: -15px;
+            width: 220px;
+            padding-left: 15px;
+            padding: 8px 0 8px 15px;
+            color: #888888; }
+            .widget-container.chat-page .contact-list ul li a:hover {
+              background-color: #e6e6e6;
+              color: #666666; }
+          .widget-container.chat-page .contact-list ul li img {
+            border-radius: 50%;
+            margin-right: 10px; }
+          .widget-container.chat-page .contact-list ul li i {
+            font-size: 12px;
+            float: right;
+            margin: 9px 20px 0 0; }
+    .widget-container.chat-page > .heading {
+      position: relative !important; }
+    .widget-container.chat-page .post-message {
+      position: relative; }
+/* Notificaciones */
