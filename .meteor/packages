@@ -13,27 +13,33 @@ standard-minifier-css   # CSS minifier run for production mode
 standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
-session
-u2622:persistent-session
-ultimatejs:tracker-react
+
+
+#BACKEND
 kadira:flow-router
-twbs:bootstrap
-okland:camera-ui
 accounts-password
+ultimatejs:tracker-react
 dburles:collection-helpers
 aldeed:simple-schema
 aldeed:collection2
-semantic:ui
-flemay:less-autoprefixer
 cfs:gridfs
 cfs:filesystem
 cfs:access-point
 cfs:standard-packages
 cfs:base-package
 cfs:graphicsmagick
+
+#FRONTEND
+session
+u2622:persistent-session
 momentjs:moment
-natestrauser:font-awesome
+twbs:bootstrap
+okland:camera-ui
+semantic:ui
+flemay:less-autoprefixer
 themeteorchef:bert
-meteortoys:allthings
 fortawesome:fontawesome
+
+#Test
+#meteortoys:allthings
 #kadira:debug
