@@ -42,7 +42,8 @@ MessageSchema = new SimpleSchema({
     }
   },
   dateSeen:{
-    type: Date
+    type: Date,
+    optional: true
   }
 
 })

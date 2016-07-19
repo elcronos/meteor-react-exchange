@@ -48,8 +48,8 @@ export default class ChatPage extends TrackerReact(React.Component){
     }
   }
   componentDidUpdate(){
-    console.log('Updated')
-    this.updateCounter()
+    //console.log('Updated')
+    //this.updateCounter()
     //Scrolldown when a new element is inserted
     this.scrollDown();
   }

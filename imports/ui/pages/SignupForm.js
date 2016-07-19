@@ -96,7 +96,7 @@ export default class SignupForm extends React.Component{
                         placeholder="Username"
                         />
                     </div>
-                    <div class="help-block with-errors"></div>
+                    <div className="help-block with-errors"></div>
                 </div>
                 <div className="row-fluid">
                     <div className="centering text-center">
