@@ -2,3 +2,4 @@ node_modules/
 .build/*
 public/uploads/*
 mup.json
+mobile-config.js
